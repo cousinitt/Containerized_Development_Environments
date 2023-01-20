@@ -27,7 +27,9 @@ docker run -it --mount type=bind,src=`pwd`,dst=/mnt/host_filesystem \
            esp_8266 /usr/bin/bash
 ```
 
-It shuts down when you exit the shell, and if you want to start it back up:
+Ok, the Docker pros will tell you to use volumes. I am not a pro. You should
+probably use volumes. Anyway, Docker shuts down the container when you exit the
+shell, and if you want to start it back up:
 
 ```sh
 docker start my_esp
