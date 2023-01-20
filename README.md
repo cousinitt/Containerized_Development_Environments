@@ -44,6 +44,14 @@ I tried to follow the directions [here](https://docs.espressif.com/projects/esp8
 
 I tried to follow the directions [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/).
 
+## Micro:Bit
+
+This is the low-level development environment, in C. This can be done either
+[online or offline](https://lancaster-university.github.io/microbit-docs/).
+It is probably a lot easier to do it online, but maybe you can't get online?
+The offline installation follows the installation instructions
+[here](https://lancaster-university.github.io/microbit-docs/offline-toolchains/).
+
 # To Do
 
 - [ ] For each board, how to flash the firmware, without the full development kit, if possible.
