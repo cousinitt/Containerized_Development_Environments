@@ -39,9 +39,11 @@ docker attach my_esp
 ## ESP 8266
 
 I tried to follow the directions [here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/index.html).
-TODO: How to flash firmware once built.
 
 ## ESP32
 
 I tried to follow the directions [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/).
-TODO: How to flash firmware once built.
+
+# To Do
+
+- [ ] For each board, how to flash the firmware, without the full development kit, if possible.
