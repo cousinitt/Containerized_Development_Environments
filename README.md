@@ -11,12 +11,11 @@ stuff, or that your computer is a monster high power thing, but mine isn't.
 
 If I could package these up in a Docker container, and develop for a while,
 (until I get frustrated or buy a new toy) then cleanup would be as simple as
-getting rid of a container. That's the good news. The bad news is that you have
-zero access to hardware. If there is some nice script to flash your board, you
-are out of luck. You will have to hack something together on your filesystem,
-or perhaps use a virtual machine.
-
-So, not a silver bullet, but maybe I'll figure something out.
+getting rid of a container. You (should) also be able to flash the firmware,
+because it is possible to give your Docker container access to a device file,
+like `/dev/ttyUSB0`, by supplying `--device=/dev/ttyUSB0` to the docker
+container `run` or `start` command. I do believe that you have to have the
+device attached before you start the container.
 
 # So, what do I do with `Dockerfile`?
 
@@ -30,6 +29,7 @@ Once you have the image, you would run it with a command like:
 
 ```sh
 docker run -it --mount type=bind,src=`pwd`,dst=/mnt/host_filesystem \
+           --device=/dev/ttyUSB0 \
            esp_8266 /usr/bin/bash
 ```
 
@@ -57,7 +57,3 @@ This is the low-level development environment, in C. This can be done either
 It is probably a lot easier to do it online, but maybe you can't get online?
 The offline installation follows the installation instructions
 [here](https://lancaster-university.github.io/microbit-docs/offline-toolchains/).
-
-# To Do
-
-- [ ] For each board, how to flash the firmware, without the full development kit, if possible.
