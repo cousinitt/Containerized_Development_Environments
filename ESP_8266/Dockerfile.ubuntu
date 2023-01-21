@@ -11,3 +11,4 @@ ENV IDF_PATH=/home/ESP8266_RTOS_SDK
 ENV PATH=$PATH:/home/esp/xtensa-lx106-elf/bin  
 
 CMD ["/usr/bin/bash"]
+# Makes about a 1G image.
