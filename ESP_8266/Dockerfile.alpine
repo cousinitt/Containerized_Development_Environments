@@ -12,3 +12,6 @@ ENV IDF_PATH=/home/ESP8266_RTOS_SDK
 ENV PATH=$PATH:/home/esp/xtensa-lx106-elf/bin  
 
 CMD ["/bin/sh"]
+# Makes about a 717MB image.
+# Pip complains when you install stuff as root.
+# TODO make a user account before pip-ing requirements.
