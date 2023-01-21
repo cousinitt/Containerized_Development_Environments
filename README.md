@@ -1,16 +1,22 @@
 # Development Environments
 
-I like to develop for embedded platforms as a hobby. The problem is that I am a
-bit fickle, and when I decide that I want to rush off to the next thing, I
-don't want to worry about all of the debris from developing for the board to be
-left on my filesystem. Here, I just toss all of the stuff in a container, and
-develop for a while, until I get frustrated or buy a new toy. Then, cleanup is
-as simple as getting rid of a container.
+This is sort of a pipe dream. I like to develop for embedded platforms as a
+hobby. The problem is that I am a bit fickle, and when I decide that I want to
+rush off to the next thing, I don't want to worry about all of the debris from
+developing for the board to be left on my filesystem. If it were a simple
+matter of uninstalling a package, fine. However most of these vendor
+development kits want to just write files everywhere. Some of the larger
+platforms almost assume that you have an entire computer to dedicate to their
+stuff, or that your computer is a monster high power thing, but mine isn't.
 
-The good news is that you have a containerized development environment, the bad
-news is that you have zero access to hardware. If there is some nice script to
-flash your board, you are out of luck. You will have to hack something together
-on your filesystem, or perhaps use a virtual machine.
+If I could package these up in a Docker container, and develop for a while,
+(until I get frustrated or buy a new toy) then cleanup would be as simple as
+getting rid of a container. That's the good news. The bad news is that you have
+zero access to hardware. If there is some nice script to flash your board, you
+are out of luck. You will have to hack something together on your filesystem,
+or perhaps use a virtual machine.
+
+So, not a silver bullet, but maybe I'll figure something out.
 
 # So, what do I do with `Dockerfile`?
 
