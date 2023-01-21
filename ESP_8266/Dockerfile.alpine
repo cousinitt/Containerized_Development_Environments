@@ -4,6 +4,7 @@ RUN apk update; \
     apk add bison curl flex gcc git gperf ncurses-dev make python3 py3-pip py3-pyserial wget; \
     curl -O https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz; \
     tar xzf xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz; \
+    rm xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz; \
     git clone --recurse-submodules --depth=1 https://github.com/espressif/ESP8266_RTOS_SDK.git; \
     python3 -m pip install -r /home/ESP8266_RTOS_SDK/requirements.txt
     
