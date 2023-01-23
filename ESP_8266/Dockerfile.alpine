@@ -1,7 +1,7 @@
 FROM alpine:latest
 RUN apk update; \
     apk add bison curl flex gcc git gperf ncurses-dev make python3 py3-pip py3-pyserial wget; \
-    useradd user1
+    adduser user1
 
 USER user1
 ENV IDF_PATH=/home/ESP8266_RTOS_SDK

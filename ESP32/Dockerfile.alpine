@@ -1,7 +1,10 @@
 FROM alpine:latest
+# dfu-util errors
+# ninja-build errors
+
 RUN apk update; \
-    apk add bison ccache cmake dfu-util flex git gperf libffi-dev libssl-dev libusb-1.0-0 ninja-build python3 python3-venv wget; \
-    useradd user1
+    apk add bison ccache cmake dfu-util flex git gperf libffi-dev libssl3 libusb ninja-build python3 wget; \
+    adduser user1
 
 WORKDIR /home/user1
 USER user1
