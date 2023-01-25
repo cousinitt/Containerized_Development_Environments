@@ -1,6 +1,7 @@
+# CURRENTLY BROKEN
 FROM alpine:latest
 RUN apk update; \
-    apk add bison curl flex gcc gettext-dev git gperf linux-lts-dev make musl-dev ncurses-dev py3-pip py3-pyserial python3 wget; \
+    apk add bison curl flex gcc musl-libintl git gperf linux-lts-dev make musl-dev ncurses-dev py3-pip py3-pyserial python3 wget; \
     adduser user1
 
 USER user1
