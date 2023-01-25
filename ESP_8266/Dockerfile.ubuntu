@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 RUN apt update -y; \
     apt install -y bison curl flex gcc git gperf libncurses-dev make python3 python3-pip python3-serial wget; \
-    useradd -D user1
+    useradd user1
 
 USER user1
 ENV IDF_PATH=/home/ESP8266_RTOS_SDK
