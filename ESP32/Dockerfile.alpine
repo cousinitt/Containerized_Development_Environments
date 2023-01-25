@@ -1,9 +1,10 @@
 FROM alpine:latest
 # dfu-util errors (in testing?)
 # ninja-build errors (just not there)
+# NOT READY YET
 
 RUN apk update; \
-    apk add bison ccache cmake dfu-util flex git gperf libffi-dev libssl3 libusb ninja-build python3 wget; \
+    apk add bison ccache cmake dfu-util flex git gperf libffi-dev libssl3 libusb musl-dev python3 wget; \
     adduser user1
 
 WORKDIR /home/user1
